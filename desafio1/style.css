@@ -18,6 +18,13 @@ label{
     margin-right: 10px;
 }
 
+input#num{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
 button#enviar{
     padding: 10px 20px;
     font-size: 16px;

@@ -1,20 +1,18 @@
-enviar.addEventListener('click', send)
-
-function send(){
-    const result = document.getElementById('resul');
-    const num = document.getElementById('numero').value;
-
-    result.textContent = "";
+enviar.addEventListener('click', tabuada)
+function tabuada(){
+   
+    const numero = parseInt(document.getElementById('num').value);
+    const resul = document.getElementById('resul');
+    resul.textContent = "";
     
-    for (let i = 1; i <= 10; i++){
+    for (let i = 0; i <= 10; i++) {
+       
+        var resultado = numero * i;
+        const p = document.createElement("p");
 
-        let resultado = num * i
+        p.textContent = `Número: ${numero} x ${i}
+        = ${resultado}`;
 
-        const line = document.createElement('p')
-
-        line.textContent = `Número ${num} x ${i} = ${resultado}`
-        
-        result.appendChild(line)
+        resul.appendChild(p);
     }
-    numero.value ()
 }
