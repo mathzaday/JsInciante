@@ -4,6 +4,8 @@ function send(){
     const result = document.getElementById('resul');
     const num = document.getElementById('numero').value;
 
+    result.textContent = "";
+    
     for (let i = 1; i <= 10; i++){
 
         let resultado = num * i
